@@ -2,30 +2,85 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background-color: #212121;
+    color: white;
 }
 
 #tentacles {
     width: 50px;
 }
 
-.header {
+nav {
+    background-color: #616ed4;
     display: flex;
-    background-color: lightblue;
-    padding: 1%;
+    justify-content: space-between;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: white;
+}
+
+main {
+    margin: auto 40px;
+}
+
+.header {
+    display: flex;
+    padding: 1%;
+    align-items: center;
+}
+
+.hero {
+    justify-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.template-str {
+    font-size: 1.3rem;
+}
+
 .stats-container {
     display: flex;
+    align-items: flex-start;
+}
+
+.stats-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px white;
 }
 
 .stats-card {
-    background-color: #a8b0bc;
-    border-radius: 7px;
+    background-color: #616ed4;
+    border-radius: 10px;
     padding: 1%;
     margin: 1%;
     width: 100%;
@@ -33,33 +88,42 @@ body {
 }
 
 #num-contributions, #total-raised, #num-games {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 #games-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .game-img {
     width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+}
+
+.game-body {
+    padding: 10px 15px;
 }
 
 .game-card {
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
-    padding: 1%;
+    color: #212121;
     margin: 1%;
-    width: 300px;
+    width: 400px;
     text-align: center;
-    border-radius: 7px;
+    border-radius: 10px;
+    border: 1px solid rgb(222, 222, 222);
 }
 
 .game-card:hover {
+    scale: 105%;
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 20px white;
 }
 
 #button-container {
@@ -71,5 +135,13 @@ button {
     border: none;
     padding: 1%;
     margin: 1%;
-    border-radius: 7px;
+    border-radius: 10px;
 }
+
+button:hover {
+    cursor: pointer;
+    scale: 105%;
+    color: white;
+    background-color: #616ed4;
+}
+
